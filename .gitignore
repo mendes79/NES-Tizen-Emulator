@@ -1,0 +1,37 @@
+# ROMs comerciais (direitos autorais): nunca versionar
+roms/
+
+# Conteudo publico distribuivel: versionar (roms_pub/ e seu .gitkeep ficam)
+!roms_pub/
+!roms_pub/.gitkeep
+
+# Artefatos de build Tizen
+.buildResult/
+*.wgt
+*.manifest.tmp
+
+# Certificados e senhas
+*.p12
+*.pwd
+Certificado/
+
+# Caches e temporarios
+*.bak
+*_backup.*
+
+# Catalogo privado (decisao B): roms.json e privado; roms_pub.json e publico
+roms.json
+
+# Assets de referencia (origem de banco) e arquivos de trabalho: nao publicar
+img/auxiliares/
+# Docs internos de desenvolvimento
+
+# Artefatos de build do nucleo (fonte clonada e objetos)
+core/fceumm/
+core/build/
+
+# Fotos cruas do celular (manter apenas os screenshots nomeados)
+img/posts/IMG_*.jpg
+
+# Prints originais da instalacao (DUID real) - manter fora do repo
+img/tv?installation/
